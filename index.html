@@ -17,11 +17,12 @@
         <h1 id="brandName"></h1>
       </div>
       <div class="menu" id="menu">
-        <a href="#home" class="nav-link active">Home</a>
-        <a href="#about" class="nav-link">About Me</a>
-        <a href="#resume" class="nav-link">My CV</a>
-        <a href="#projects" class="nav-link">My Project</a>
-        <a href="#reflections" class="nav-link">My Reflection</a>
+        <a href="#home">Beranda</a>
+        <a href="#about">Tentang Saya</a>
+        <a href="#resume">CV Saya</a>
+        <a href="#projects">Proyek Saya</a>
+        <a href="#reflections">Refleksi Saya</a>
+        <button onclick="scrollToSection('contact')">Kontak</button>
       </div>
       <div class="cta">
         <button class="btn" onclick="scrollToSection('contact')">Contact</button>
@@ -34,11 +35,10 @@
     <header id="home" class="hero reveal">
       <div class="hero-left">
           <h2 class="name">Aisha Laily Purwanto</h2>
-          <p class="lead">Hello! I’m Aisha Laily Purwanto, currently pursuing a degree in <span style="color:var(--accent);font-weight:600">Informatics Engineering at Airlangga University</span></p>
-                <p>I love transforming ideas into functional, user-centered applications and growing every day as a future software developer.</p>
-          <div style="display:flex;gap:10px;margin-top:12px">
-            <a class="btn" href="#projects">Lihat Proyek</a>
-            <a class="btn" href="#resume">Read CV</a>
+          <p class="lead">Halo! Saya Aisha Laily Purwanto, mahasiswa <span style="color:var(--accent);font-weight:600">Teknik Informatika di Universitas Airlangga</span></p>
+          <p>Saya suka mengubah ide menjadi aplikasi yang fungsional dan berpusat pada pengguna, serta terus berkembang setiap hari sebagai calon software developer.</p>
+          <a class="btn" href="#projects">Lihat Proyek</a>
+          <a class="btn" href="#resume">Lihat CV</a> 
           </div>    
       </div>
       <div class="hero-right">
@@ -50,37 +50,34 @@
 
     <!-- ABOUT -->
     <section id="about" class="reveal">
-      <div class="grid-2">
         <div class="about-left">
           <h3>Biografi</h3>
-          <p>I am a 5th-semester Informatics Engineering student at Airlangga University, passionate about application development, UI/UX design, and data analysis.
-            Through my involvement in the HIMTI organization, I’ve gained valuable experience in leadership, communication, and teamwork, particularly as Head of the KSK Initialization Division (2024) and Head of the Events Division for “Guest Lecture” (2024).
-          </p>
-          <p>
-            I’m deeply interested in software development and IT systems, and continuously strive to enhance my analytical and problem-solving skills.
-            My goal is to grow as a professional software developer who can create impactful digital solutions.</p>
+            <p>Saya adalah mahasiswa semester 6 Teknik Informatika Universitas Airlangga yang memiliki fokus pada pengembangan web menggunakan Laravel, pengembangan frontend, serta analisis data. 
+              Berpengalaman dalam membangun aplikasi berbasis web dan mobile melalui proyek akademik, serta aktif dalam organisasi yang mengasah kemampuan kerja tim, komunikasi, dan kepemimpinan.</p>
+            <p>Saya terus berupaya meningkatkan kemampuan analitis dan pemecahan masalah. 
+              Tujuan saya adalah berkembang menjadi software developer profesional yang mampu menciptakan solusi digital yang berdampak.</p>
           <button class="linkedin-btn" onclick="window.open('https://www.linkedin.com','_blank')" aria-label="LinkedIn">
-            <!-- simple linkedin svg -->
             <svg viewBox="0 0 24 24" fill="none" xmlns="https://www.linkedin.com/in/aisha-purwanto-239ab4287"><rect width="24" height="24" rx="4" fill="black"/><path d="M6.94 8.5h2.56v8.6H6.94v-8.6zM8.22 7.42a1.3 1.3 0 110-2.6 1.3 1.3 0 010 2.6zM11.46 9.66c1.03 0 1.85.9 1.85 2.03v4.44h-2.56V11.7c0-.6-.22-1.01-.78-1.01-.43 0-.69.29-.8.57-.04.1-.04.24-.04.38v4.04H7.9v-8.6h2.44v1.47c.33-.52.96-1.23 2.12-1.23z" fill="blue"/></svg>
             <span style="opacity:0.9;font-weight:700">LinkedIn</span>
           </button>
         </div>
-
+<!-- 
         <div class="about-media">
           <div class="collage">
             <img src="public/psdm.jpg" alt="collage 1" onerror="this.src='https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=600&auto=format&fit=crop&s=placeholder'">
             <img src="public/ti.jpg" alt="collage 2" onerror="this.src='https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=600&auto=format&fit=crop&s=placeholder'">
           </div>
-          <div class="youtube-embed">
-            <iframe src="https://www.youtube.com/embed/XC_2S3jhekI" title="YouTube video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div class="photo-gallery">
+            <img src="public/foto3.jpg" alt="foto 3" onerror="this.src='https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=400'">
+            <img src="public/foto4.jpg" alt="foto 4" onerror="this.src='https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=400'">
           </div>
-        </div>
+        </div> -->
       </div>
     </section>
 
     <!-- RESUME -->
     <section id="resume" class="reveal">
-      <h3> Curriculum Vitae (CV)</h3>
+      <h3>Curriculum Vitae (CV)</h3>
       <div class="resume-card">
         <iframe src="public/cv.pdf" class="pdf-frame" aria-label="Resume PDF" onerror="this.style.display='none'"></iframe>
         <div style="display:flex;gap:12px;align-items:center;margin-top:12px">
@@ -94,7 +91,7 @@
     <section class="projects" id="projects">
     <h2 class="section-title">My GitHub Projects</h2>
     <p style="color:#9aa4b2;max-width:600px;margin:0 auto 40px;">
-        Here are some of my latest public repositories from GitHub.
+        <p>Berikut beberapa repositori publik terbaru saya dari GitHub.</p>
     </p>
     <div class="project-slider">
         <div id="github-projects" class="project-track"></div>
@@ -104,20 +101,10 @@
 
     <!-- REFLECTION -->
     <section id="reflections" class="reveal">
-      <h2>Reflection</h2>
-        <p>
-            Throughout my academic journey at <strong>Airlangga University</strong>, I’ve learned that growth comes not only from knowledge but also from experience and perseverance. 
-            Studying <strong>Informatics Engineering</strong> has shaped the way I think—encouraging me to approach every challenge with logic, creativity, and empathy.
-        </p>
-        <p>
-            My involvement in the <strong>HIMTI organization</strong> taught me valuable lessons about teamwork, leadership, and communication. 
-            Leading divisions and organizing events such as the <em>KSK Initialization</em> and <em>Guest Lecture</em> projects allowed me to strengthen my problem-solving and time management skills.
-        </p>
-        <p>
-            As I continue to develop my expertise in <strong>software development, UI/UX design,</strong> and <strong>data analysis</strong>, 
-            I aim to build solutions that are not only functional but also meaningful to people. 
-            I believe that technology, when used thoughtfully, has the power to create positive impact and inspire change.
-        </p>
+      <h2>Refleksi</h2>
+        <p>Selama perjalanan akademik saya di <strong>Universitas Airlangga</strong>, saya belajar bahwa pertumbuhan tidak hanya datang dari ilmu pengetahuan, tetapi juga dari pengalaman dan ketekunan. Belajar <strong>Teknik Informatika</strong> telah membentuk cara saya berpikir—mendorong saya untuk menghadapi setiap tantangan dengan logika, kreativitas, dan empati.</p>
+        <p>Keterlibatan saya di organisasi <strong>HIMTI</strong> mengajarkan pelajaran berharga tentang kerja tim, kepemimpinan, dan komunikasi. Memimpin divisi dan menyelenggarakan acara seperti <em>KSK Inisialisasi</em> dan <em>Guest Lecture</em> membantu saya memperkuat kemampuan pemecahan masalah dan manajemen waktu.</p>
+        <p>Seiring saya terus mengembangkan keahlian dalam <strong>pengembangan software, desain UI/UX,</strong> dan <strong>analisis data</strong>, saya bertujuan membangun solusi yang tidak hanya fungsional tetapi juga bermakna bagi banyak orang.</p>
     </section>
 
     <!-- FOOTER & CONTACT -->
